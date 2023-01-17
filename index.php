@@ -2,12 +2,12 @@
 include_once 'class/Garden.php';
 
 $myGarden = new Garden();
-$i = 0;
+
 $countTrees = [];
 //высадка 25 деревьев
 while(count($countTrees) < 25){
     $countTrees = $myGarden->AddTrees(count($countTrees));
-    $i++;
+
 }
 
 //Сбор фруктов и сортировка по ящикам
